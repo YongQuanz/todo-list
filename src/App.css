@@ -1,38 +1,66 @@
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
 .App {
   text-align: center;
+  width: 500px;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2044837-jpeg.jpg")
+    center center no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  color: #2a293e;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-input {
+  width: 80%;
+  line-height: 1.2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.add-btn {
+  margin: auto 5px;
+  height: 24px;
+}
+
+.todo-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.todo-item {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 6px auto;
+  padding: 8px;
+  color: #000;
+  background-color: #ffffff;
+  height: 25px;
+  border-radius: 5px;
+}
+
+button {
+  width: 15%;
+  display: block;
+  float: right;
+  padding: 0 20px;
+  border: none;
+  background: #f45702;
   color: white;
+  letter-spacing: 2px;
+  transition: 0.2s all ease-in-out;
+  border-bottom: 2px solid transparent;
+  outline: none;
 }
-
-.App-link {
-  color: #61dafb;
+button:hover {
+  background: inherit;
+  color: #f45702;
+  border-bottom: 2px solid #f45702;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button::selection {
+  background: rgb(255, 199, 184);
 }
